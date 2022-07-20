@@ -15,9 +15,10 @@
         </div>
         <div id="navbarMenuHeroA" class="navbar-menu">
           <div class="navbar-end">
-            <%= link_to "HOME", root_path, class: "navbar-item is-link" %>
-            <a class="navbar-item"> ABOUT </a>
-            <a class="navbar-item"> GALLERY </a>
+            <%= link_to "HOME", home_path, class: "navbar-item is-link" %>
+            <%= link_to "ABOUT", about_path, class: "navbar-item is-link" %>
+            <%= link_to "GALLERY", gallery_path, class: "navbar-item is-link" %>
+            <%= link_to "CONTACT", contact_path, class: "navbar-item is-link" %>
             <span class="navbar-item">
               <%= link_to "BOOK", new_appointment_path, class: "button is-link" %>
             </span>
