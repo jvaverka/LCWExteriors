@@ -1,14 +1,11 @@
-<h1 class="title">Appointments</h1>
+<h1 class="title mt-6 has-text-centered">Appointments</h1>
 
-<div id="appointments">
+<div class="colums is-desktop">
   <% @appointments.each do |appointment| %>
     <%= render appointment %>
-    <p>
-      <%= link_to "Show this appointment", appointment %>
-    </p>
   <% end %>
 </div>
 
-<button class="button is-link is-light is-rounded">
+<button class="button mt-4 is-link is-light is-rounded">
   <%= link_to "New appointment", new_appointment_path %>
 </button>

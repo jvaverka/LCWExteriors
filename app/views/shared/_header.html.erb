@@ -7,7 +7,7 @@
           <a class="navbar-item">
             <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
           </a>
-          <span class="navbar-burger" data-target="navbarMenuHeroA">
+          <span class="navbar-burger" data-target="navbarMenuHeroA" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
             <span></span>
             <span></span>
             <span></span>
@@ -15,8 +15,11 @@
         </div>
         <div id="navbarMenuHeroA" class="navbar-menu">
           <div class="navbar-end">
+            <%= link_to "HOME", root_path, class: "navbar-item is-link" %>
+            <a class="navbar-item"> ABOUT </a>
+            <a class="navbar-item"> GALLERY </a>
             <span class="navbar-item">
-              <%= link_to "Book appointment", new_appointment_path, class: "button is-link" %>
+              <%= link_to "BOOK", new_appointment_path, class: "button is-link" %>
             </span>
           </div>
         </div>
@@ -27,12 +30,8 @@
   <!-- Hero content: will be in the middle -->
   <div class="hero-body">
     <div class="container has-text-centered">
-      <p class="title">
-        LCW Exteriors
-      </p>
-      <p class="subtitle">
-        For all your professional lighting needs
-      </p>
+      <p class="title"> LCW Exteriors </p>
+      <p class="subtitle"> For all your professional lighting needs </p>
     </div>
   </div>
 </section>
