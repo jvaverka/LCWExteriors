@@ -1,8 +1,7 @@
-<%= render @appointment %>
+<div class="columns">
+  <%= render @appointment %>
+</div>
 
-<div>
-  <%= link_to "Edit this appointment", edit_appointment_path(@appointment) %> |
-  <%= link_to "Back to appointments", appointments_path %>
-
-  <%= button_to "Destroy this appointment", @appointment, method: :delete %>
+<div class="container has-text-centered">
+  <%= link_to "Back to appointments", appointments_path, class: "button is-primary" %>
 </div>
