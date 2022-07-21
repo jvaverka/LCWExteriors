@@ -11,37 +11,173 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :first_name, style: "display: block" %>
-    <%= form.text_field :first_name %>
+  <div class="field is-horizontal">
+    <div class="field-label is-medium">
+      <label class="label">First Name</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <p class="control has-icons-left has-icons-right">
+          <%= form.text_field :first_name, class: "input is-rounded", type: "text", placeholder: "John" %>
+          <span class="icon is-left">
+            <i class='fa fa-user'></i>
+          </span>
+          <span class="icon is-right">
+            <i class='fa fa-check'></i>
+          </span>
+        </p>
+      </div>
+    </div>
   </div>
 
-  <div>
-    <%= form.label :last_name, style: "display: block" %>
-    <%= form.text_field :last_name %>
+  <div class="field is-horizontal">
+    <div class="field-label is-medium">
+      <label class="label">Last Name</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <p class="control has-icons-left has-icons-right">
+          <%= form.text_field :last_name, class: "input is-rounded", type: "text", placeholder: "Smith" %>
+          <span class="icon is-left">
+            <i class='fa fa-user'></i>
+          </span>
+          <span class="icon is-right">
+            <i class='fa fa-check'></i>
+          </span>
+        </p>
+      </div>
+    </div>
   </div>
 
-  <div>
-    <%= form.label :email, style: "display: block" %>
-    <%= form.text_field :email %>
+  <div class="field is-horizontal">
+    <div class="field-label is-medium">
+      <label class="label">Email Address</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <p class="control has-icons-left has-icons-right">
+          <%= form.text_field :email, class: "input is-rounded", type: "email", placeholder: "john.smith@gmail.com" %>
+          <span class="icon is-left">
+            <i class='fa fa-envelope'></i>
+          </span>
+          <span class="icon is-right">
+            <i class='fa fa-check'></i>
+          </span>
+        </p>
+      </div>
+    </div>
   </div>
 
-  <div>
-    <%= form.label :street_address, style: "display: block" %>
-    <%= form.text_field :street_address %>
+  <div class="field is-horizontal">
+    <div class="field-label is-medium">
+      <label class="label">Telephone</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <p class="control has-icons-left has-icons-right">
+        <!-- Add `telephone_number` to db table -->
+          <%= form.text_field :zip_code, class: "input is-rounded", type: "tel", placeholder: "404-867-5309" %>
+          <span class="icon is-left">
+            <i class='fa fa-phone'></i>
+          </span>
+          <span class="icon is-right">
+            <i class='fa fa-check'></i>
+          </span>
+        </p>
+      </div>
+    </div>
   </div>
 
-  <div>
-    <%= form.label :city, style: "display: block" %>
-    <%= form.text_field :city %>
+  <div class="field is-horizontal">
+    <div class="field-label is-medium">
+      <label class="label">Street Address</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <p class="control has-icons-left has-icons-right">
+          <%= form.text_field :street_address, class: "input is-rounded", type: "text", placeholder: "1234 Main Street" %>
+          <span class="icon is-left">
+            <i class='fa fa-home'></i>
+          </span>
+          <span class="icon is-right">
+            <i class='fa fa-check'></i>
+          </span>
+        </p>
+      </div>
+    </div>
   </div>
 
-  <div>
-    <%= form.label :zip_code, style: "display: block" %>
-    <%= form.number_field :zip_code %>
+  <div class="field is-horizontal">
+    <div class="field-label is-medium">
+      <label class="label">City</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <p class="control has-icons-left has-icons-right">
+          <%= form.text_field :city, class: "input is-rounded", type: "text", placeholder: "Atlanta" %>
+          <span class="icon is-left">
+            <i class="fa fa-home"></i>
+          </span>
+          <span class="icon is-right">
+            <i class='fa fa-check'></i>
+          </span>
+        </p>
+      </div>
+    </div>
   </div>
 
-  <div>
-    <%= form.submit %>
+  <fieldset disabled>
+    <div class="field is-horizontal">
+      <div class="field-label is-medium">
+        <label class="label">State</label>
+      </div>
+      <div class="field-body">
+        <div class="field">
+          <div class="control is-expanded has-icons-left">
+            <div class="select is-fullwidth">
+              <select name="country">
+                <option value="Georgia">Georgia</option>
+              </select>
+            </div>
+            <span class="icon is-left">
+              <i class="fa fa-home"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+
+  <div class="field is-horizontal">
+    <div class="field-label is-medium">
+      <label class="label">Zip Code</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <p class="control has-icons-left has-icons-right">
+          <%= form.text_field :zip_code, class: "input is-rounded", type: "text", placeholder: "12345" %>
+          <span class="icon is-left">
+            <i class='fa fa-home'></i>
+          </span>
+          <span class="icon is-right">
+            <i class='fa fa-check'></i>
+          </span>
+        </p>
+      </div>
+    </div>
   </div>
+
+  <div class="field is-horizontal">
+    <div class="field-label">
+      <!-- Left empty for spacing -->
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <div class="control">
+          <button class="button is-primary" onclick=<% form.submit %> >Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 <% end %>
