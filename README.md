@@ -5,20 +5,18 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+- Ruby version: `2.7.0`
+- System dependencies: None
+- Configuration: None
+- Database creation: TBD
+- Database initialization: TBD
+- How to run the test suite: TBD
+- Services (job queues, cache servers, search engines, etc.): TBD
+- Deployment instructions: TBD
 
-* System dependencies
+## TODO
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- [ ] Clean up booking form
+- [ ] Add images to gallery
+- [ ] Deploy
+- [ ] Jobs dashboard
