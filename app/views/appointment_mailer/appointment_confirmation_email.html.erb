@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h1>Appointment Confirmation for <%= @appointment.first_name.capitalize %></h1>
+    <p>
+      You have submitted a request for lighting services from LCW Exteriors. <br/>
+    </p>
+    <p>
+      We will respond shortly with a calendar invite.
+      This invitation will have the time for your scheduled service.
+      In the meantime, please explore our gallery at <%= @url %>.
+    </p>
+    <p>Thanks for booking and have a great day!</p>
+  </body>
+</html>
