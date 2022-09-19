@@ -2,6 +2,10 @@
 
 <section>
     <div class="container has-text-centered">
-        <p class="subtitle">Welcome to the gallery!</p>
+      <% Dir[Rails.root.join('app', 'assets', 'images', 'gallery*')].each do |path| %>
+        <div>
+          <%= image_tag path.split('/').last, :style => 'max-width:80%;' %>
+        <div/>
+      <% end %>
     </div>
 </section>
