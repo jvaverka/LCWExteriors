@@ -4,3 +4,23 @@ $link: #2e933c;
 $purple: #9d9ae3;
 
 @import "bulma";
+
+.navbar-burger {
+    color: #fff;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    background-color: $secondary;
+    clear: both;
+    position: relative;
+    height: 100px;
+    margin-top: auto;
+    opacity: 0.95;
+}
