@@ -4,7 +4,7 @@
     <nav class="navbar">
       <div class="container">
         <div class="navbar-brand">
-          <a class="navbar-item">
+          <a class="navbar-item" href="/">
             <!-- <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo"> -->
             <i class="fa fa-lightbulb-o" aria-hidden="true" style="font-size:xx-large"></i>
           </a>
@@ -17,9 +17,7 @@
         <div id="navbarMenuHeroA" class="navbar-menu">
           <div class="navbar-end">
             <%= link_to "HOME", home_path, class: "navbar-item is-link" %>
-            <%= link_to "ABOUT", about_path, class: "navbar-item is-link" %>
             <%= link_to "GALLERY", gallery_path, class: "navbar-item is-link" %>
-            <%= link_to "CONTACT", contact_path, class: "navbar-item is-link" %>
             <span class="navbar-item">
               <%= link_to "BOOK", new_appointment_path, class: "button is-link" %>
             </span>
